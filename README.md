@@ -1,4 +1,4 @@
-# AI Scenario Writer
+# 📝AI Scenario Writer
 > AI-powered workplace scenario generator for a career upskilling platform.  
 > Generates vivid, ICP-differentiated scenarios with genuine tension, diverse strategies and calibrated rubrics.
 
