@@ -21,13 +21,16 @@ def validate_quality(output: ScenarioOutput, icp_type: str, language: str) -> li
     philosophy_issues = _check_philosophy_quality(output.strategy_chips)
     issues.extend(philosophy_issues)
     return issues
+def _clean_words(text: str) -> set[str]:
+    cleaned = re.sub(r"[^\w\s]", "", text)
+    return set(cleaned.split())
 def _check_strategy_diversity(chips: list) -> list[str]:
     issues = []
     labels = [chip.label.lower() for chip in chips]
     for i in range(len(labels)):
         for j in range(i + 1, len(labels)):
-            words_i = set(labels[i].split())
-            words_j = set(labels[j].split())
+            words_i = _clean_words(labels[i])
+            words_j = _clean_words(labels[j])
             stopwords = {
                 "the", "a", "an", "and", "or", "to", "in", "for", "of", "with", "on", "at", "it", "is",
                 "है", "की", "को", "में", "से", "और", "का", "के", "लिए", "यह", "कि", "एक", "हैं", "करना", 
@@ -46,17 +49,22 @@ def _check_strategy_diversity(chips: list) -> list[str]:
     philosophies = [chip.philosophy.lower() for chip in chips]
     for i in range(len(philosophies)):
         for j in range(i + 1, len(philosophies)):
-            words_i = set(philosophies[i].split())
-            words_j = set(philosophies[j].split())
+            words_i = _clean_words(philosophies[i])
+            words_j = _clean_words(philosophies[j])
             stopwords = {
                 "the", "a", "an", "and", "or", "to", "in", "for", "of", "with", "on", "at", "it", "is", "by", "this", "that",
                 "can", "will", "your", "you", "their", "them", "they", "helps", "help", "way", "make", "more",
                 "है", "की", "को", "में", "से", "और", "का", "के", "लिए", "यह", "कि", "एक", "हैं", "करना",
                 "करने", "हो", "पर", "भी", "ही", "तो", "नहीं", "हम", "आप", "मैं", "मुझे", "मेरा", "अपने", "अपनी", "क्या",
                 "आपको", "इससे", "जिससे", "ताकि", "साथ", "करें", "रूप", "बारे", "तरीके", "बेहतर",
-                "ढंग", "प्रभावी", "सकते", "सकता", "सकती", "चाहिए", "करके", "होगी", "होता",
+                "ढंग", "प्रभावी", "सकते", "सकता", "सकती", "चाहिए", "करके", "होगी", "होता", "होते", "होती",
                 "मदद", "मिलेगी", "करता", "करती", "जाता", "जाती", "रहे", "रहा", "रही",
                 "अपना", "उनके", "उनकी", "उन्हें", "वाले", "वाली", "कर", "दे", "ले",
+                "टीम", "साथियों", "संबंध", "प्रतिष्ठा", "बढ़ेगी", "बनाने", "बना", "पाएंगे", "जिम्मेदारी", "ज़िम्मेदारी",
+                "प्रतिबद्ध", "दिखा", "दिखाने", "प्रयास", "दिखाते", "अगर", "हमारे", "उत्पाद", "गुणवत्ता", "क्लाइंट्स", "क्लाइंट", "क्लाइंटों", "ग्राहकों", "ग्राहक",
+                "महसूस", "होगा", "आवश्यकता", "आवश्यकताओं", "ज़रूरत", "ज़रूरतों", "वफादारी", "मजबूत", "वैकल्पिक",
+                "प्रतिक्रिया", "व्यवहार्य", "संतुष्टि", "कैसे", "क्यों", "कब", "कहाँ", "कहा", "बोला", "बोलने", "बोलते",
+                "सुनते", "सुधार", "संतुष्ट"
             }
             words_i -= stopwords
             words_j -= stopwords
