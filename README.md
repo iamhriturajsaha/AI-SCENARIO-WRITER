@@ -1,56 +1,47 @@
-# Scenario Writer — Group 2 AI Module
-
+# AI Scenario Writer
 > AI-powered workplace scenario generator for a career upskilling platform.  
-> Generates vivid, ICP-differentiated scenarios with genuine tension, diverse strategies, and calibrated rubrics.
+> Generates vivid, ICP-differentiated scenarios with genuine tension, diverse strategies and calibrated rubrics.
 
-## Quick Start (< 2 minutes)
-
+## Quick Start
 ### 1. Clone & Install
 
 ```bash
-git clone <this-repo>
-cd Project
+git clone https://github.com/iamhriturajsaha/AI-SCENARIO-WRITER.git
+cd AI-SCENARIO-WRITER
 pip install -r requirements.txt
 ```
 
 ### 2. Set API Key
-
 ```bash
-cp .env.example .env
-# Edit .env and set: GROQ_API_KEY=your-key-here
-# Get free key at: https://console.groq.com/keys
+# Edit .env and set :-
+GROQ_API_KEY=your-key-here
 ```
 
-### 3. Run on a single input
-
+### 3. Run on a single test case
 ```bash
 # ICP-A example (high_wage, English)
-python -m src.main --input test_cases/inputs/icp_a_01.json
+python -m src.main --input Test Cases/Inputs/icp_a_01.json
 
 # ICP-B example (low_wage, Hindi)
-python -m src.main --input test_cases/inputs/icp_b_01.json
+python -m src.main --input Test Cases/Inputs/icp_b_01.json
 ```
 
 ### 4. Run all 10 test cases
-
 ```bash
 python run_tests.py
 ```
 
 ---
-
 ## Architecture
-
 ```
 Input JSON → Prompt Chain → Validated JSON Output
                 │
-                ├── Stage 1: Build context-rich user prompt
-                ├── Stage 2: Call Groq Llama 3 70B → get scenario JSON
-                └── Stage 3: Validate schema + quality → auto-repair if needed
+                ├── Stage 1 - Build context-rich user prompt.
+                ├── Stage 2 - Call Groq Llama 3 70B → get scenario JSON.
+                └── Stage 3 - Validate schema + quality → auto-repair if needed.
 ```
 
 ### Key design decisions
-
 | Decision | Rationale |
 |----------|-----------|
 | **Pydantic v2 schema enforcement** | Zero tolerance for missing/extra fields or wrong types |
@@ -59,51 +50,7 @@ Input JSON → Prompt Chain → Validated JSON Output
 | **Anti-pattern examples in prompt** | Shows the model exactly what NOT to produce |
 | **Max 2 repair retries** | Balances quality with API cost/latency |
 
-### Project structure
-
-```
-├── src/
-│   ├── schema.py       # Pydantic input/output models
-│   ├── prompts.py      # System prompt & templates
-│   ├── chain.py        # Prompt chain orchestration (Groq)
-│   ├── validator.py    # Quality checks
-│   └── main.py         # CLI entry point
-├── test_cases/
-│   ├── inputs/         # 10 test input JSONs
-│   └── outputs/        # Generated outputs (after running)
-├── run_tests.py        # Batch test runner
-├── prompt_defense.md   # Prompt design rationale
-└── requirements.txt
-```
-
----
-
-## Usage Examples
-
-### Run with inline JSON
-```bash
-python -m src.main --json '{"icp_type":"high_wage","milestone_code":"M03","skill_target":"conflict_resolution","language":"en"}'
-```
-
-### Save output to file
-```bash
-python -m src.main --input test_cases/inputs/icp_a_01.json --output my_output.json
-```
-
-### Quiet mode (JSON only, no logging)
-```bash
-python -m src.main --input test_cases/inputs/icp_a_01.json --quiet
-```
-
-### Run a specific test
-```bash
-python run_tests.py --test icp_b_03
-```
-
----
-
 ## Input Schema
-
 ```json
 {
   "icp_type": "high_wage | low_wage",
@@ -114,7 +61,6 @@ python run_tests.py --test icp_b_03
 ```
 
 ## Output Schema
-
 ```json
 {
   "episode_title": "string",
@@ -138,10 +84,7 @@ python run_tests.py --test icp_b_03
 }
 ```
 
----
-
 ## Test Cases
-
 | # | File | ICP | Milestone | Skill Target | Language |
 |---|------|-----|-----------|-------------|----------|
 | 1 | icp_a_01 | high_wage | M01 | stakeholder_communication | en |
@@ -155,10 +98,7 @@ python run_tests.py --test icp_b_03
 | 9 | icp_b_04 | low_wage | M03 | professional_etiquette | hi |
 | 10 | icp_b_05 | low_wage | M05 | negotiation | hi |
 
----
-
 ## Model
-
-- **Provider:** Groq
-- **Model:** llama-3.1-8b-instant
-- **Max tokens:** 4096
+- **Provider -** Groq
+- **Model -** llama-3.1-8b-instant
+- **Max tokens -** 4096
