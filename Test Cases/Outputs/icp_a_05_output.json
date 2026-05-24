@@ -1,0 +1,60 @@
+{
+  "episode_title": "Technical Debt Showdown",
+  "scene": {
+    "setting": "The company's open office space",
+    "time": "Wednesday morning, 2 hours before the weekly sprint retrospective",
+    "context": "The team has been working on the new feature for weeks, but the technical debt is piling up. Yesterday's code review meeting ended in a heated debate between the tech lead and the senior engineer about the best approach to refactor the codebase."
+  },
+  "characters": [
+    {
+      "name": "Rahul",
+      "role": "Tech Lead",
+      "mood": "frustrated"
+    },
+    {
+      "name": "Emily",
+      "role": "Senior Engineer",
+      "mood": "defensive"
+    },
+    {
+      "name": "David",
+      "role": "CTO",
+      "mood": "concerned"
+    }
+  ],
+  "antagonist_opening_line": "Rahul, I just got an email from the product manager stating that our current approach is too slow and will compromise the feature's release date. We need a plan to refactor the codebase ASAP, or else we'll be delaying the entire project.",
+  "strategy_chips": [
+    {
+      "id": "chip_1",
+      "label": "Own the Technical Debt",
+      "philosophy": "Taking full ownership of the technical debt shows accountability and a commitment to solving the problem. By acknowledging the issue, we can redirect the conversation to finding a solution."
+    },
+    {
+      "id": "chip_2",
+      "label": "Prioritize the Feature",
+      "philosophy": "By focusing on the core feature and its immediate benefits, we can demonstrate the value of the project to stakeholders and push back against the pressure to refactor the codebase. This approach highlights the trade-offs and prioritizes the most critical aspects of the project."
+    },
+    {
+      "id": "chip_3",
+      "label": "Reframe the Discussion",
+      "philosophy": "By reframing the discussion around the technical debt as an opportunity for growth and learning, we can shift the focus from criticism to collaboration. This approach emphasizes the importance of knowledge sharing and expertise within the team, and positions us for future success."
+    }
+  ],
+  "success_criteria": [
+    "De-escalate the tension between Rahul and Emily within 30 minutes",
+    "Develop a clear plan to address the technical debt within 1 hour",
+    "Obtain David's buy-in on the proposed approach within 2 hours"
+  ],
+  "rubric": {
+    "communication": 80,
+    "composure": 70,
+    "clarity": 85,
+    "strategy": 90,
+    "outcome": 80
+  },
+  "transfer_targets": [
+    "Navigate conflict between team members with different perspectives",
+    "Develop a plan to address technical debt in a high-stakes project",
+    "Communicate the value and trade-offs of different approaches to stakeholders"
+  ]
+}

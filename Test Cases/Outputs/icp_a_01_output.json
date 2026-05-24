@@ -1,0 +1,55 @@
+{
+  "episode_title": "Clarifying a Misunderstood Deadline",
+  "scene": {
+    "setting": "Software Engineering Team Stand-up",
+    "time": "Monday morning, 9:00 AM",
+    "context": "The team is discussing the upcoming sprint's deadline for the new feature, which was misunderstood by the product manager, causing a minor panic among team members."
+  },
+  "characters": [
+    {
+      "name": "Maya",
+      "role": "Senior Software Engineer",
+      "mood": "Concerned"
+    },
+    {
+      "name": "Rohan",
+      "role": "Product Manager",
+      "mood": "Anxious"
+    }
+  ],
+  "antagonist_opening_line": "Maya, I just got an email from the CTO saying that our deadline for the feature is actually 2 weeks earlier than what I told you. Can you explain why the database integration is taking so long?",
+  "strategy_chips": [
+    {
+      "id": "chip_1",
+      "label": "Own It Head-On",
+      "philosophy": "Taking full accountability disarms criticism and redirects the conversation to solutions. People respect those who don't make excuses."
+    },
+    {
+      "id": "chip_2",
+      "label": "Redirect to Root Cause",
+      "philosophy": "The visible failure often has a systemic cause. Surfacing it shows strategic thinking and prevents the same issue from recurring."
+    },
+    {
+      "id": "chip_3",
+      "label": "Propose a Recovery Plan",
+      "philosophy": "People care less about what went wrong and more about what happens next. A concrete plan demonstrates competence under pressure."
+    }
+  ],
+  "success_criteria": [
+    "The team understands the new deadline and its implications",
+    "The product manager and senior engineer agree on a revised plan",
+    "The team leader is satisfied with the resolution"
+  ],
+  "rubric": {
+    "communication": 80,
+    "composure": 90,
+    "clarity": 85,
+    "strategy": 70,
+    "outcome": 80
+  },
+  "transfer_targets": [
+    "Delivering bad news to a stakeholder without losing their trust",
+    "Clarifying a misunderstood deadline with a team member",
+    "Proposing a recovery plan to mitigate the consequences of a missed deadline"
+  ]
+}

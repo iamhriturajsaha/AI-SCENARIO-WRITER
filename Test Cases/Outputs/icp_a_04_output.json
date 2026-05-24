@@ -1,0 +1,60 @@
+{
+  "episode_title": "Missing Sprint Deadline: What to Do?",
+  "scene": {
+    "setting": "Tech Lead's Office",
+    "time": "Wednesday, 3 PM",
+    "context": "The team is 3 days away from their sprint deadline, and the code review shows that 2 critical features are still unfinished. The tech lead has asked the user to prioritize and adjust the development schedule, but the user is unsure how to allocate the remaining time effectively."
+  },
+  "characters": [
+    {
+      "name": "Rohan",
+      "role": "Tech Lead",
+      "mood": "frustrated"
+    },
+    {
+      "name": "Aisha",
+      "role": "Senior Engineer",
+      "mood": "supportive"
+    },
+    {
+      "name": "Mayank",
+      "role": "Product Manager",
+      "mood": "concerned"
+    }
+  ],
+  "antagonist_opening_line": "Rohan: 'We're running 3 days behind schedule, and I still don't see a clear plan to finish these critical features. What's going on here, Aisha?'",
+  "strategy_chips": [
+    {
+      "id": "chip_1",
+      "label": "Prioritize Features",
+      "philosophy": "Focus on the most critical features and adjust the development schedule to meet the deadline. This approach shows a clear understanding of the product roadmap and prioritization skills."
+    },
+    {
+      "id": "chip_2",
+      "label": "Communicate with the Team",
+      "philosophy": "Involve the entire team in the planning process and ensure everyone is aligned on the priorities and deadlines. This approach demonstrates strong communication and collaboration skills."
+    },
+    {
+      "id": "chip_3",
+      "label": "Re-evaluate the Sprint Goals",
+      "philosophy": "Reassess the sprint goals and consider adjusting them to make the deadline more achievable. This approach shows adaptability and a willingness to reassess priorities."
+    }
+  ],
+  "success_criteria": [
+    "The team meets the deadline and delivers the critical features",
+    "The user effectively communicates the plan and priorities to the team",
+    "The user adapts to the changing requirements and adjusts the development schedule accordingly"
+  ],
+  "rubric": {
+    "communication": 70,
+    "composure": 60,
+    "clarity": 80,
+    "strategy": 80,
+    "outcome": 90
+  },
+  "transfer_targets": [
+    "effective time management during sprint planning",
+    "clear communication of priorities and deadlines to the team",
+    "adaptability in the face of changing requirements"
+  ]
+}

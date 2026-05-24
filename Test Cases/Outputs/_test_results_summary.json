@@ -1,0 +1,735 @@
+[
+  {
+    "test_name": "icp_a_01",
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M01",
+      "skill_target": "stakeholder_communication",
+      "language": "en"
+    },
+    "status": "PASS",
+    "schema_valid": true,
+    "quality_issues": [],
+    "output": {
+      "episode_title": "Clarifying a Misunderstood Deadline",
+      "scene": {
+        "setting": "Software Engineering Team Stand-up",
+        "time": "Monday morning, 9:00 AM",
+        "context": "The team is discussing the upcoming sprint's deadline for the new feature, which was misunderstood by the product manager, causing a minor panic among team members."
+      },
+      "characters": [
+        {
+          "name": "Maya",
+          "role": "Senior Software Engineer",
+          "mood": "Concerned"
+        },
+        {
+          "name": "Rohan",
+          "role": "Product Manager",
+          "mood": "Anxious"
+        }
+      ],
+      "antagonist_opening_line": "Maya, I just got an email from the CTO saying that our deadline for the feature is actually 2 weeks earlier than what I told you. Can you explain why the database integration is taking so long?",
+      "strategy_chips": [
+        {
+          "id": "chip_1",
+          "label": "Own It Head-On",
+          "philosophy": "Taking full accountability disarms criticism and redirects the conversation to solutions. People respect those who don't make excuses."
+        },
+        {
+          "id": "chip_2",
+          "label": "Redirect to Root Cause",
+          "philosophy": "The visible failure often has a systemic cause. Surfacing it shows strategic thinking and prevents the same issue from recurring."
+        },
+        {
+          "id": "chip_3",
+          "label": "Propose a Recovery Plan",
+          "philosophy": "People care less about what went wrong and more about what happens next. A concrete plan demonstrates competence under pressure."
+        }
+      ],
+      "success_criteria": [
+        "The team understands the new deadline and its implications",
+        "The product manager and senior engineer agree on a revised plan",
+        "The team leader is satisfied with the resolution"
+      ],
+      "rubric": {
+        "communication": 80,
+        "composure": 90,
+        "clarity": 85,
+        "strategy": 70,
+        "outcome": 80
+      },
+      "transfer_targets": [
+        "Delivering bad news to a stakeholder without losing their trust",
+        "Clarifying a misunderstood deadline with a team member",
+        "Proposing a recovery plan to mitigate the consequences of a missed deadline"
+      ]
+    },
+    "error": null,
+    "duration_seconds": 1.6
+  },
+  {
+    "test_name": "icp_a_02",
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M03",
+      "skill_target": "conflict_resolution",
+      "language": "en"
+    },
+    "status": "PASS",
+    "schema_valid": true,
+    "quality_issues": [],
+    "output": {
+      "episode_title": "Crunch Time in the Dev Team",
+      "scene": {
+        "setting": "The office, in the middle of a coding sprint.",
+        "time": "5:45 PM on a Friday, just before the weekly sprint review.",
+        "context": "The team has been struggling to meet their sprint goals, and tensions are running high. The CTO has announced a surprise call with a potential investor next Monday, and the team needs to deliver a polished demo by then."
+      },
+      "characters": [
+        {
+          "name": "Rohan",
+          "role": "Senior Engineer",
+          "mood": "stressed"
+        },
+        {
+          "name": "Leela",
+          "role": "Tech Lead",
+          "mood": "confident"
+        },
+        {
+          "name": "Amit",
+          "role": "CTO",
+          "mood": "concerned"
+        }
+      ],
+      "antagonist_opening_line": "Rohan, I reviewed your code commits, and I'm worried that we're not making enough progress on the critical path. Can you explain why you thought it was a good idea to refactor the database schema this late in the sprint?",
+      "strategy_chips": [
+        {
+          "id": "chip_1",
+          "label": "Own the Problem",
+          "philosophy": "Taking full accountability for the issue shows that you're proactive and committed to finding a solution."
+        },
+        {
+          "id": "chip_2",
+          "label": "Redirect to Root Cause",
+          "philosophy": "Focusing on the underlying causes of the problem shows that you're strategic and willing to invest time in solving the root issue."
+        },
+        {
+          "id": "chip_3",
+          "label": "Reframe the Challenge",
+          "philosophy": "Reframing the challenge as an opportunity to learn and improve shows that you're adaptable and open to new ideas."
+        }
+      ],
+      "success_criteria": [
+        "Successfully diffused the tension with Rohan and refocused the team on meeting the sprint goals.",
+        "Identified and addressed the root cause of the issue, preventing similar problems in the future.",
+        "Developed a plan to present the demo to the investor, highlighting the team's strengths and accomplishments."
+      ],
+      "rubric": {
+        "communication": 80,
+        "composure": 70,
+        "clarity": 85,
+        "strategy": 60,
+        "outcome": 90
+      },
+      "transfer_targets": [
+        "effectively resolving conflicts with team members in a high-pressure situation",
+        "identifying and addressing the root cause of a technical issue",
+        "presenting a clear and compelling demo to stakeholders"
+      ]
+    },
+    "error": null,
+    "duration_seconds": 4.57
+  },
+  {
+    "test_name": "icp_a_03",
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M05",
+      "skill_target": "technical_leadership",
+      "language": "en"
+    },
+    "status": "PASS",
+    "schema_valid": true,
+    "quality_issues": [],
+    "output": {
+      "episode_title": "Prioritizing Technical Debt",
+      "scene": {
+        "setting": "Remote standup via Slack",
+        "time": "Wednesday, 9:00 AM",
+        "context": "The team is sprinting towards the product launch, but the technical lead noticed a growing backlog of high-priority bugs. Meanwhile, the product manager emphasized the need to meet the customer's requested feature set by the end of the week."
+      },
+      "characters": [
+        {
+          "name": "Arun Kumar",
+          "role": "Technical Lead",
+          "mood": "Anxious"
+        },
+        {
+          "name": "Rahul Patel",
+          "role": "Product Manager",
+          "mood": "Focused"
+        },
+        {
+          "name": "Nalini Iyer",
+          "role": "Senior Engineer",
+          "mood": "Cautious"
+        }
+      ],
+      "antagonist_opening_line": "Arun, I've reviewed the current sprint backlog, and I'm concerned that we'll miss the deadline if we don't prioritize the high-risk bugs. Can you explain why you're not making them top priority?",
+      "strategy_chips": [
+        {
+          "id": "chip_1",
+          "label": "Focus on Must-Haves First",
+          "philosophy": "When faced with competing priorities, focus on delivering the must-have features first. This ensures that the product meets the customer's core requirements and sets the stage for future iterations."
+        },
+        {
+          "id": "chip_2",
+          "label": "Emphasize Technical Debt",
+          "philosophy": "Prioritizing technical debt is crucial in the long run. Delaying it can lead to increased maintenance costs, decreased developer productivity, and ultimately, a lower-quality product."
+        },
+        {
+          "id": "chip_3",
+          "label": "Collaborative Prioritization",
+          "philosophy": "Involve the entire team in prioritization discussions. This fosters a sense of ownership, ensures that everyone understands the trade-offs, and helps to build a consensus around the most critical features."
+        }
+      ],
+      "success_criteria": [
+        "The technical lead effectively communicates the risks and benefits of each approach to the team and stakeholders.",
+        "The team reaches a collective decision on prioritization within the next 2 hours.",
+        "The agreed-upon plan is documented and shared with the rest of the organization."
+      ],
+      "rubric": {
+        "communication": 80,
+        "composure": 60,
+        "clarity": 90,
+        "strategy": 70,
+        "outcome": 85
+      },
+      "transfer_targets": [
+        "Negotiating competing priorities in a technical context",
+        "Communicating technical trade-offs to non-technical stakeholders",
+        "Building a consensus around a complex decision"
+      ]
+    },
+    "error": null,
+    "duration_seconds": 36.94
+  },
+  {
+    "test_name": "icp_a_04",
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M02",
+      "skill_target": "time_management",
+      "language": "en"
+    },
+    "status": "PASS",
+    "schema_valid": true,
+    "quality_issues": [],
+    "output": {
+      "episode_title": "Missing Sprint Deadline: What to Do?",
+      "scene": {
+        "setting": "Tech Lead's Office",
+        "time": "Wednesday, 3 PM",
+        "context": "The team is 3 days away from their sprint deadline, and the code review shows that 2 critical features are still unfinished. The tech lead has asked the user to prioritize and adjust the development schedule, but the user is unsure how to allocate the remaining time effectively."
+      },
+      "characters": [
+        {
+          "name": "Rohan",
+          "role": "Tech Lead",
+          "mood": "frustrated"
+        },
+        {
+          "name": "Aisha",
+          "role": "Senior Engineer",
+          "mood": "supportive"
+        },
+        {
+          "name": "Mayank",
+          "role": "Product Manager",
+          "mood": "concerned"
+        }
+      ],
+      "antagonist_opening_line": "Rohan: 'We're running 3 days behind schedule, and I still don't see a clear plan to finish these critical features. What's going on here, Aisha?'",
+      "strategy_chips": [
+        {
+          "id": "chip_1",
+          "label": "Prioritize Features",
+          "philosophy": "Focus on the most critical features and adjust the development schedule to meet the deadline. This approach shows a clear understanding of the product roadmap and prioritization skills."
+        },
+        {
+          "id": "chip_2",
+          "label": "Communicate with the Team",
+          "philosophy": "Involve the entire team in the planning process and ensure everyone is aligned on the priorities and deadlines. This approach demonstrates strong communication and collaboration skills."
+        },
+        {
+          "id": "chip_3",
+          "label": "Re-evaluate the Sprint Goals",
+          "philosophy": "Reassess the sprint goals and consider adjusting them to make the deadline more achievable. This approach shows adaptability and a willingness to reassess priorities."
+        }
+      ],
+      "success_criteria": [
+        "The team meets the deadline and delivers the critical features",
+        "The user effectively communicates the plan and priorities to the team",
+        "The user adapts to the changing requirements and adjusts the development schedule accordingly"
+      ],
+      "rubric": {
+        "communication": 70,
+        "composure": 60,
+        "clarity": 80,
+        "strategy": 80,
+        "outcome": 90
+      },
+      "transfer_targets": [
+        "effective time management during sprint planning",
+        "clear communication of priorities and deadlines to the team",
+        "adaptability in the face of changing requirements"
+      ]
+    },
+    "error": null,
+    "duration_seconds": 20.93
+  },
+  {
+    "test_name": "icp_a_05",
+    "input": {
+      "icp_type": "high_wage",
+      "milestone_code": "M07",
+      "skill_target": "cross_team_collaboration",
+      "language": "en"
+    },
+    "status": "PASS",
+    "schema_valid": true,
+    "quality_issues": [],
+    "output": {
+      "episode_title": "Technical Debt Showdown",
+      "scene": {
+        "setting": "The company's open office space",
+        "time": "Wednesday morning, 2 hours before the weekly sprint retrospective",
+        "context": "The team has been working on the new feature for weeks, but the technical debt is piling up. Yesterday's code review meeting ended in a heated debate between the tech lead and the senior engineer about the best approach to refactor the codebase."
+      },
+      "characters": [
+        {
+          "name": "Rahul",
+          "role": "Tech Lead",
+          "mood": "frustrated"
+        },
+        {
+          "name": "Emily",
+          "role": "Senior Engineer",
+          "mood": "defensive"
+        },
+        {
+          "name": "David",
+          "role": "CTO",
+          "mood": "concerned"
+        }
+      ],
+      "antagonist_opening_line": "Rahul, I just got an email from the product manager stating that our current approach is too slow and will compromise the feature's release date. We need a plan to refactor the codebase ASAP, or else we'll be delaying the entire project.",
+      "strategy_chips": [
+        {
+          "id": "chip_1",
+          "label": "Own the Technical Debt",
+          "philosophy": "Taking full ownership of the technical debt shows accountability and a commitment to solving the problem. By acknowledging the issue, we can redirect the conversation to finding a solution."
+        },
+        {
+          "id": "chip_2",
+          "label": "Prioritize the Feature",
+          "philosophy": "By focusing on the core feature and its immediate benefits, we can demonstrate the value of the project to stakeholders and push back against the pressure to refactor the codebase. This approach highlights the trade-offs and prioritizes the most critical aspects of the project."
+        },
+        {
+          "id": "chip_3",
+          "label": "Reframe the Discussion",
+          "philosophy": "By reframing the discussion around the technical debt as an opportunity for growth and learning, we can shift the focus from criticism to collaboration. This approach emphasizes the importance of knowledge sharing and expertise within the team, and positions us for future success."
+        }
+      ],
+      "success_criteria": [
+        "De-escalate the tension between Rahul and Emily within 30 minutes",
+        "Develop a clear plan to address the technical debt within 1 hour",
+        "Obtain David's buy-in on the proposed approach within 2 hours"
+      ],
+      "rubric": {
+        "communication": 80,
+        "composure": 70,
+        "clarity": 85,
+        "strategy": 90,
+        "outcome": 80
+      },
+      "transfer_targets": [
+        "Navigate conflict between team members with different perspectives",
+        "Develop a plan to address technical debt in a high-stakes project",
+        "Communicate the value and trade-offs of different approaches to stakeholders"
+      ]
+    },
+    "error": null,
+    "duration_seconds": 38.01
+  },
+  {
+    "test_name": "icp_b_01",
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M01",
+      "skill_target": "customer_handling",
+      "language": "hi"
+    },
+    "status": "PASS",
+    "schema_valid": true,
+    "quality_issues": [],
+    "output": {
+      "episode_title": "सहयोग की कमी का सामना करें",
+      "scene": {
+        "setting": "कार्यालय",
+        "time": "सुबह ९:३० बजे",
+        "context": "आपके सीनियर कॉलेज से मिलने जा रहे हैं और आपको अपनी पहली जिम्मेदारी दी गई है - ग्राहक से संपर्क करने के लिए।"
+      },
+      "characters": [
+        {
+          "name": "रोहन",
+          "role": "नई टीम का सदस्य",
+          "mood": "निराश"
+        },
+        {
+          "name": "अनु",
+          "role": "टीम लीड",
+          "mood": "सहायक"
+        },
+        {
+          "name": "ग्राहक (मिसेज रावट)",
+          "role": "ग्राहक",
+          "mood": "चिड़चिड़ी"
+        }
+      ],
+      "antagonist_opening_line": "रोहन, मैंने आपके डॉक्टर से बात की है और वे कह रहे हैं कि आपके फोन कॉल्स में ५०% का प्रतिशत टाइम वॉयस ऑवर में चला जाता है!",
+      "strategy_chips": [
+        {
+          "id": "chip_1",
+          "label": "सही समय पर जवाब देना",
+          "philosophy": "जवाब देने के लिए सही समय महत्वपूर्ण है, लेकिन यह भी महत्वपूर्ण है कि आप सही जवाब दें।"
+        },
+        {
+          "id": "chip_2",
+          "label": "ग्राहक की समस्या को समझना",
+          "philosophy": "ग्राहक की समस्या को सुनने के बाद उनकी जरूरतों को पूरा करने की कोशिश करना महत्वपूर्ण है।"
+        },
+        {
+          "id": "chip_3",
+          "label": "वैकल्पिक समाधान सुझाना",
+          "philosophy": "ग्राहक को वैकल्पिक समाधान पेश करने से उन्हें अपनी समस्या का समाधान करने में मदद मिलती है।"
+        }
+      ],
+      "success_criteria": [
+        "ग्राहक की समस्या को समझने में सक्षम होना",
+        "सही समय पर जवाब देना",
+        "ग्राहक को वैकल्पिक समाधान पेश करना"
+      ],
+      "rubric": {
+        "communication": 80,
+        "composure": 70,
+        "clarity": 90,
+        "strategy": 60,
+        "outcome": 85
+      },
+      "transfer_targets": [
+        "ग्राहक के साथ सही समय पर जवाब देना",
+        "ग्राहक की समस्या को समझना और उनकी जरूरतों को पूरा करने की कोशिश करना",
+        "वैकल्पिक समाधान पेश करना"
+      ]
+    },
+    "error": null,
+    "duration_seconds": 22.17
+  },
+  {
+    "test_name": "icp_b_02",
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M02",
+      "skill_target": "workplace_communication",
+      "language": "hi"
+    },
+    "status": "PASS",
+    "schema_valid": true,
+    "quality_issues": [],
+    "output": {
+      "episode_title": "चुनौती-चुनौती से निपटना",
+      "scene": {
+        "setting": "कार्यालय",
+        "time": "दोपहर 2 बजे",
+        "context": "आपके पूरे टीम को चुनौतीपूर्ण कार्यभार से निपटने के लिए तैयार किया जा रहा है, और आपके मैनेजर ने आपको सूचित किया है कि आप जल्द ही अतिरिक्त जिम्मेदारियों के साथ कार्य में शामिल होंगे।"
+      },
+      "characters": [
+        {
+          "name": "रोहन",
+          "role": "सुपरवाइजर",
+          "mood": "खुश"
+        },
+        {
+          "name": "प्रियंका",
+          "role": "टीम लीड",
+          "mood": "चिंतित"
+        },
+        {
+          "name": "अर्जुन",
+          "role": "सीनियर कॉलीग",
+          "mood": "सकारात्मक"
+        },
+        {
+          "name": "गौरव",
+          "role": "ग्राहक",
+          "mood": "नाराज"
+        }
+      ],
+      "antagonist_opening_line": "गौरव बुलेटिन बूथ पर आकर बोलता है, 'मैंने अपना ऑर्डर तीन घंटे पहले किया था, और यह अभी भी नहीं पहुंचा है। आपको यह कैसे हो सकता है? मैं मैनेजर से शिकायत करूंगा!'",
+      "strategy_chips": [
+        {
+          "id": "chip_1",
+          "label": "नकारात्मकता को स्वीकार करें और सुधार का वादा करें",
+          "philosophy": "जो भी हुआ है, उसे स्वीकार करने से आप आलोचना को कम कर सकते हैं और समस्या का समाधान ढूंढने लग सकते हैं।"
+        },
+        {
+          "id": "chip_2",
+          "label": "समस्या की जड़ तक पहुंचें",
+          "philosophy": "दिखाई देने वाली समस्या के पीछे एक व्यावसायिक कारण हो सकता है। यह कारण ढूंढने से आपको भविष्य में इसी तरह की समस्याओं से निपटने में मदद मिल सकती है।"
+        },
+        {
+          "id": "chip_3",
+          "label": "समाधान की योजना बनाएं",
+          "philosophy": "लोग यह जानना चाहते हैं कि आगे क्या होगा। एक स्पष्ट योजना तैयार करने से आपकी प्रतिष्ठा बनी रहती है और समस्या का समाधान तेजी से किया जा सकता है।"
+        }
+      ],
+      "success_criteria": [
+        "ग्राहक को संतुष्ट करने के लिए समस्या का समाधान",
+        "समस्या का मूल कारण ढूंढना और भविष्य में इसी तरह की समस्याओं से निपटने के लिए कदम उठाना"
+      ],
+      "rubric": {
+        "communication": 60,
+        "composure": 80,
+        "clarity": 70,
+        "strategy": 50,
+        "outcome": 90
+      },
+      "transfer_targets": [
+        "दुर्भावनापूर्ण ग्राहक के साथ संवाद करने के लिए सावधानी से सुनने और स्पष्ट रूप से जवाब देने का कौशल",
+        "समस्या का मूल कारण ढूंढने और सुधारने के लिए संकल्पना"
+      ]
+    },
+    "error": null,
+    "duration_seconds": 8.57
+  },
+  {
+    "test_name": "icp_b_03",
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M04",
+      "skill_target": "problem_solving",
+      "language": "hi"
+    },
+    "status": "PASS",
+    "schema_valid": true,
+    "quality_issues": [],
+    "output": {
+      "episode_title": "ब्रेकअप में मदद करें",
+      "scene": {
+        "setting": "कस्टमर सपोर्ट सेंटर",
+        "time": "सुबह 9 बजे",
+        "context": "आपका सहकर्मी रोहन ने आपको बताया कि उनकी पार्टनर ने उनसे दो दिन पहले ही तलाक की बात कही थी और वह बहुत टूटे हुए हैं। रोहन को आज एक अहम कॉल का जवाब देना था, लेकिन वह बिल्कुल भी तैयार नहीं है।"
+      },
+      "characters": [
+        {
+          "name": "रोहन",
+          "role": "सहकर्मी",
+          "mood": "निराश"
+        },
+        {
+          "name": "प्रियंका",
+          "role": "सुपरवाइजर",
+          "mood": "चिंतित"
+        },
+        {
+          "name": "आप",
+          "role": "टीम लीड",
+          "mood": "विचारशील"
+        }
+      ],
+      "antagonist_opening_line": "प्रियंका, मुझे पता है कि मैं इस कॉल का जवाब देने के लिए तैयार नहीं हूँ, लेकिन अगर मैं नहीं जाऊं, तो कौन बिना तैयारी के बड़े-बड़े फैसले लेगा?",
+      "strategy_chips": [
+        {
+          "id": "chip_1",
+          "label": "मजबूती से खुद को स्वीकारें",
+          "philosophy": "लोग मजबूती से खुद को स्वीकारने की क्षमता से प्रभावित होते हैं, इसलिए खुद को स्वीकारने से कोई भी समस्या हल हो सकती है।"
+        },
+        {
+          "id": "chip_2",
+          "label": "समस्या के मूल कारण को समझें",
+          "philosophy": "सप्ताह भर पहले की घटनाएं और उनके परिणाम हमारे वर्तमान में ही महत्वपूर्ण हैं। इसलिए समस्या के मूल कारण को समझने से समस्या का समाधान संभव हो सकता है।"
+        },
+        {
+          "id": "chip_3",
+          "label": "समाधान की रूपरेखा बनाएं",
+          "philosophy": "समस्या के समाधान के लिए एक स्पष्ट रूपरेखा देने से समस्या का समाधान संभव हो सकता है।"
+        }
+      ],
+      "success_criteria": [
+        "रोहन को कॉल का जवाब देने के लिए तैयार करना",
+        "कार्यालय के वातावरण में शांति बनाए रखना",
+        "एक स्पष्ट समाधान की रूपरेखा बनाना"
+      ],
+      "rubric": {
+        "communication": 80,
+        "composure": 70,
+        "clarity": 90,
+        "strategy": 85,
+        "outcome": 85
+      },
+      "transfer_targets": [
+        "किसी मुश्किल स्थिति में संवाद करने की क्षमता विकसित करना",
+        "किसी सहकर्मी को सहायता प्रदान करने का तरीका सीखना",
+        "अचानक होने वाली समस्याओं का समाधान करने के लिए स्मार्ट रणनीति बनाना"
+      ]
+    },
+    "error": null,
+    "duration_seconds": 102.9
+  },
+  {
+    "test_name": "icp_b_04",
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M03",
+      "skill_target": "professional_etiquette",
+      "language": "hi"
+    },
+    "status": "PASS",
+    "schema_valid": true,
+    "quality_issues": [],
+    "output": {
+      "episode_title": "चाय की कमी ✅",
+      "scene": {
+        "setting": "कार्यालय",
+        "time": "सुबह 10 बजे",
+        "context": "मैंने कल दोपहर को अपने सहयोगी के साथ काम किया था, लेकिन आज वह गायब हो गया है। मैं अपने सहयोगी की चाय की कमी के बारे में चिंतित हूं।"
+      },
+      "characters": [
+        {
+          "name": "दाने तैं",
+          "role": "कर्मचारी",
+          "mood": "चिंतित"
+        },
+        {
+          "name": "लारी देर",
+          "role": "सहायक प्रबंधक",
+          "mood": "शांत"
+        }
+      ],
+      "antagonist_opening_line": "ना, मैंने आपके सहयोगी से बात की, लेकिन वह बता नहीं पा रहे कि उनकी चाय कहां है। आपको उनकी जिम्मेदारी लेनी होगी।",
+      "strategy_chips": [
+        {
+          "id": "चिप_1",
+          "label": "सहयोगी की मदद करना",
+          "philosophy": "सहयोगी को समर्थन देने से उन्हें आत्मविश्वास मिलता है और वे सही तरीके से काम करने के लिए प्रेरित होते हैं।"
+        },
+        {
+          "id": "चिप_2",
+          "label": "सहयोगी के कार्यों की समीक्षा करना",
+          "philosophy": "सहयोगी के कार्यों की समीक्षा करके हम उन्हें सुधारने के लिए प्रेरित कर सकते हैं और उनके कार्यों की गुणवत्ता में सुधार हो सकता है।"
+        },
+        {
+          "id": "चिप_3",
+          "label": "कर्मचारी की जिम्मेदारी निर्धारित करना",
+          "philosophy": "कर्मचारी की जिम्मेदारी निर्धारित करके हम उन्हें खुद के लिए काम करने के लिए प्रेरित कर सकते हैं और उनकी उत्पादकता में सुधार हो सकता है।"
+        }
+      ],
+      "success_criteria": [
+        "सहयोगी के साथ सही तरीके से समझौता हो जाए",
+        "चाय की समस्या का समाधान हो जाए",
+        "कर्मचारी का आत्मविश्वास बढ़ जाए"
+      ],
+      "rubric": {
+        "communication": 70,
+        "composure": 60,
+        "clarity": 80,
+        "strategy": 50,
+        "outcome": 80
+      },
+      "transfer_targets": [
+        "सहयोगी के साथ सही तरीके से संवाद करना",
+        "कर्मचारी के आत्मविश्वास को बढ़ाना",
+        "चाय की समस्या का स्थायी समाधान करना"
+      ]
+    },
+    "error": null,
+    "duration_seconds": 77.39
+  },
+  {
+    "test_name": "icp_b_05",
+    "input": {
+      "icp_type": "low_wage",
+      "milestone_code": "M05",
+      "skill_target": "negotiation",
+      "language": "hi"
+    },
+    "status": "PASS",
+    "schema_valid": true,
+    "quality_issues": [],
+    "output": {
+      "episode_title": "मुझे अपने साथी से बात करना चाहिए",
+      "scene": {
+        "setting": "ग्राहक सहायता केंद्र",
+        "time": "सुबह 10:00 बजे",
+        "context": "आपका साथी शामिल नहीं हुआ है और आप अपने चार्ज को पूरा करने के लिए टेंशन महसूस कर रहे हैं"
+      },
+      "characters": [
+        {
+          "name": "विवेक",
+          "role": "ग्राहक सहायक",
+          "mood": "गंभीर"
+        },
+        {
+          "name": "प्रियंका",
+          "role": "सुपरवाइजर",
+          "mood": "चिंतित"
+        },
+        {
+          "name": "अर्जुन",
+          "role": "सीनियर कालेज",
+          "mood": "निराश"
+        }
+      ],
+      "antagonist_opening_line": "विवेक, तुम्हारा साथी अभी भी नहीं आया है, और मुझे लगता है कि तुम्हारे चार्ज को पूरा नहीं करने की संभावना है।",
+      "strategy_chips": [
+        {
+          "id": "chip_1",
+          "label": "सीधे बात करना",
+          "philosophy": "सीधे और ईमानदार होने से आप अपने साथी के साथ अपनी बात कह सकते हैं और समस्या का समाधान निकाल सकते हैं।"
+        },
+        {
+          "id": "chip_2",
+          "label": "स्थिति को समझना",
+          "philosophy": "स्थिति को समझने से आप अपने साथी की दृष्टिकोण को समझ सकते हैं और समस्या का समाधान निकाल सकते हैं।"
+        },
+        {
+          "id": "chip_3",
+          "label": "मैनेजर से सहायता लेना",
+          "philosophy": "मैनेजर से सहायता लेने से आप अपने साथी के साथ समस्या का समाधान निकाल सकते हैं और अपने कार्य को पूरा कर सकते हैं।"
+        }
+      ],
+      "success_criteria": [
+        "साथी के साथ समस्या का समाधान निकालना",
+        "चार्ज को पूरा करना",
+        "सुपरवाइजर के साथ सकारात्मक संबंध बनाना"
+      ],
+      "rubric": {
+        "communication": 70,
+        "composure": 80,
+        "clarity": 60,
+        "strategy": 85,
+        "outcome": 90
+      },
+      "transfer_targets": [
+        "negotiation",
+        "conflict resolution",
+        "effective communication"
+      ]
+    },
+    "error": null,
+    "duration_seconds": 52.67
+  }
+]

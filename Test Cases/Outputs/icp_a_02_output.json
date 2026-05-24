@@ -1,0 +1,60 @@
+{
+  "episode_title": "Crunch Time in the Dev Team",
+  "scene": {
+    "setting": "The office, in the middle of a coding sprint.",
+    "time": "5:45 PM on a Friday, just before the weekly sprint review.",
+    "context": "The team has been struggling to meet their sprint goals, and tensions are running high. The CTO has announced a surprise call with a potential investor next Monday, and the team needs to deliver a polished demo by then."
+  },
+  "characters": [
+    {
+      "name": "Rohan",
+      "role": "Senior Engineer",
+      "mood": "stressed"
+    },
+    {
+      "name": "Leela",
+      "role": "Tech Lead",
+      "mood": "confident"
+    },
+    {
+      "name": "Amit",
+      "role": "CTO",
+      "mood": "concerned"
+    }
+  ],
+  "antagonist_opening_line": "Rohan, I reviewed your code commits, and I'm worried that we're not making enough progress on the critical path. Can you explain why you thought it was a good idea to refactor the database schema this late in the sprint?",
+  "strategy_chips": [
+    {
+      "id": "chip_1",
+      "label": "Own the Problem",
+      "philosophy": "Taking full accountability for the issue shows that you're proactive and committed to finding a solution."
+    },
+    {
+      "id": "chip_2",
+      "label": "Redirect to Root Cause",
+      "philosophy": "Focusing on the underlying causes of the problem shows that you're strategic and willing to invest time in solving the root issue."
+    },
+    {
+      "id": "chip_3",
+      "label": "Reframe the Challenge",
+      "philosophy": "Reframing the challenge as an opportunity to learn and improve shows that you're adaptable and open to new ideas."
+    }
+  ],
+  "success_criteria": [
+    "Successfully diffused the tension with Rohan and refocused the team on meeting the sprint goals.",
+    "Identified and addressed the root cause of the issue, preventing similar problems in the future.",
+    "Developed a plan to present the demo to the investor, highlighting the team's strengths and accomplishments."
+  ],
+  "rubric": {
+    "communication": 80,
+    "composure": 70,
+    "clarity": 85,
+    "strategy": 60,
+    "outcome": 90
+  },
+  "transfer_targets": [
+    "effectively resolving conflicts with team members in a high-pressure situation",
+    "identifying and addressing the root cause of a technical issue",
+    "presenting a clear and compelling demo to stakeholders"
+  ]
+}

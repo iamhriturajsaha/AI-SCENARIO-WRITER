@@ -1,0 +1,60 @@
+{
+  "episode_title": "Prioritizing Technical Debt",
+  "scene": {
+    "setting": "Remote standup via Slack",
+    "time": "Wednesday, 9:00 AM",
+    "context": "The team is sprinting towards the product launch, but the technical lead noticed a growing backlog of high-priority bugs. Meanwhile, the product manager emphasized the need to meet the customer's requested feature set by the end of the week."
+  },
+  "characters": [
+    {
+      "name": "Arun Kumar",
+      "role": "Technical Lead",
+      "mood": "Anxious"
+    },
+    {
+      "name": "Rahul Patel",
+      "role": "Product Manager",
+      "mood": "Focused"
+    },
+    {
+      "name": "Nalini Iyer",
+      "role": "Senior Engineer",
+      "mood": "Cautious"
+    }
+  ],
+  "antagonist_opening_line": "Arun, I've reviewed the current sprint backlog, and I'm concerned that we'll miss the deadline if we don't prioritize the high-risk bugs. Can you explain why you're not making them top priority?",
+  "strategy_chips": [
+    {
+      "id": "chip_1",
+      "label": "Focus on Must-Haves First",
+      "philosophy": "When faced with competing priorities, focus on delivering the must-have features first. This ensures that the product meets the customer's core requirements and sets the stage for future iterations."
+    },
+    {
+      "id": "chip_2",
+      "label": "Emphasize Technical Debt",
+      "philosophy": "Prioritizing technical debt is crucial in the long run. Delaying it can lead to increased maintenance costs, decreased developer productivity, and ultimately, a lower-quality product."
+    },
+    {
+      "id": "chip_3",
+      "label": "Collaborative Prioritization",
+      "philosophy": "Involve the entire team in prioritization discussions. This fosters a sense of ownership, ensures that everyone understands the trade-offs, and helps to build a consensus around the most critical features."
+    }
+  ],
+  "success_criteria": [
+    "The technical lead effectively communicates the risks and benefits of each approach to the team and stakeholders.",
+    "The team reaches a collective decision on prioritization within the next 2 hours.",
+    "The agreed-upon plan is documented and shared with the rest of the organization."
+  ],
+  "rubric": {
+    "communication": 80,
+    "composure": 60,
+    "clarity": 90,
+    "strategy": 70,
+    "outcome": 85
+  },
+  "transfer_targets": [
+    "Negotiating competing priorities in a technical context",
+    "Communicating technical trade-offs to non-technical stakeholders",
+    "Building a consensus around a complex decision"
+  ]
+}
