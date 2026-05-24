@@ -102,3 +102,24 @@ Input JSON → Prompt Chain → Validated JSON Output
 - **Provider -** Groq
 - **Model -** llama-3.1-8b-instant
 - **Max tokens -** 4096
+
+## Challenges & Key Solutions
+### 1. Strategy & Philosophy Diversity
+* **Challenge - ** LLMs generate repetitive options (e.g., three ways to apologize) or copy-paste phrasing templates.
+* **Solution - ** Custom token overlap validator using Jaccard similarity (excluding stop words) to reject overlaps >60% and enforce distinct strategic/psychological philosophies.
+
+### 2. Lazy Flat Rubric Traps
+* **Challenge -** Models default to identical scores (e.g., all 50s) across all rubric dimensions.
+* **Solution -** Strict rubric variance check ensuring varied weights that align with the specific scenario's learning goal.
+
+### 3. Generic Opening Lines
+* **Challenge -** Overuse of immersion-breaking clichés like *"We need to talk about your performance."*
+* **Solution -** Regex-based antagonist line filter (`GENERIC_PATTERNS`) combined with a word-count threshold to mandate context-rich, high-tension lines.
+
+### 4. Tech vs. Service ICP Drift
+* **Challenge -** Keeping corporate tech terms (like *sprint*, *deploy*) out of gig/service worker contexts and vice versa.
+* **Solution -** Automated ICP keyword checks that validate domain-specific terminology for both personas.
+
+### 5. API Flakiness & Rate Limits
+* **Challenge -** Transient API timeouts and HTTP `429` rate limits from Groq under load.
+* **Solution -** A resilient retry-and-backoff loop handling retryable errors (500, 503, 429) up to 5 times.
