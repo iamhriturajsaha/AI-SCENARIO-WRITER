@@ -20,10 +20,10 @@ GROQ_API_KEY=your-key-here
 ### 3. Run on a single test case
 ```bash
 # ICP-A example (high_wage, English)
-python -m src.main --input Test Cases/Inputs/icp_a_01.json
+python -m src.main --input "Test Cases/Inputs/icp_a_01.json"
 
 # ICP-B example (low_wage, Hindi)
-python -m src.main --input Test Cases/Inputs/icp_b_01.json
+python -m src.main --input "Test Cases/Inputs/icp_b_01.json"
 ```
 
 ### 4. Run all 10 test cases
