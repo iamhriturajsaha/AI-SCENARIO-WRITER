@@ -36,10 +36,15 @@ The 3 chips must offer fundamentally different approaches, not different wording
 - Chip 2: "Say sorry and ask for more time"
 - Chip 3: "Accept the mistake and commit to improvement"
 
-✅ GOOD (three distinct philosophies):
+✅ GOOD (three distinct philosophies in English):
 - Chip 1: "Own It Head-On" — philosophy: "Taking full accountability disarms criticism and redirects the conversation to solutions. People respect those who don't make excuses."
 - Chip 2: "Redirect to Root Cause" — philosophy: "The visible failure often has a systemic cause. Surfacing it shows strategic thinking and prevents the same issue from recurring."
 - Chip 3: "Propose a Recovery Plan" — philosophy: "People care less about what went wrong and more about what happens next. A concrete plan demonstrates competence under pressure."
+
+✅ GOOD (three distinct philosophies in Hindi — natural, high strategic/psychological depth):
+- Chip 1: "गलती को सीधे स्वीकारें (Own It Head-On)" — philosophy: "अपनी गलती की जिम्मेदारी लेने से सामने वाले का गुस्सा शांत होता है और बातचीत सीधे समाधान की तरफ मुड़ती है। लोग बहाने बनाने वालों के बजाय जिम्मेदारी लेने वालों की इज्जत करते हैं।"
+- Chip 2: "मूल कारण पर ध्यान दें (Redirect to Root Cause)" — philosophy: "अक्सर किसी बाहरी गड़बड़ी के पीछे कोई गहरा ढांचागत कारण होता है। उसे सामने लाने से आपकी समझदारी दिखती है और भविष्य में वही गलती दोबारा होने की गुंजाइश खत्म हो जाती है।"
+- Chip 3: "तुरंत समाधान पेश करें (Propose a Recovery Plan)" — philosophy: "लोग इस बात की ज्यादा परवाह नहीं करते कि गलती क्यों हुई, बल्कि इस बात की करते हैं कि आगे क्या होगा। एक ठोस और व्यावहारिक योजना मुश्किल घड़ी में भी आपकी कार्य-कुशलता साबित करती है।"
 
 ### Rule 4: The philosophy Field Explains WHY, Not WHAT
 Each philosophy must explain the psychological or strategic principle behind the approach. It answers: "Why does this strategy work in the real world?"
@@ -127,7 +132,10 @@ def build_user_prompt(icp_type: str, milestone_code: str, skill_target: str, lan
             "\n\nLANGUAGE: Hindi (Devanagari script). Write all content fields in natural spoken Hindi. "
             "Use the kind of Hindi real people speak — mix in common English words where natural "
             "(e.g., 'meeting', 'deadline', 'manager', 'report'). Do NOT use overly formal or "
-            "textbook Hindi. JSON keys must remain in English."
+            "textbook Hindi. JSON keys must remain in English.\n"
+            "CRITICAL: For Hindi strategy chips and philosophies, avoid using a repeated template or identical sentence endings across the three chips "
+            "(e.g., do NOT end every philosophy with similar phrases like 'इससे आपकी प्रतिष्ठा बढ़ेगी...' or 'मदद कर सकते हैं'). "
+            "Each of the 3 strategy chip philosophies must explain a completely unique and different strategic/psychological principle in natural, diverse Hindi."
         )
     else:
         language_instruction = "\n\nLANGUAGE: English. Write all content in clear, natural English."
@@ -156,5 +164,8 @@ def build_repair_prompt(original_output: str, issues: list[str]) -> str:
 {original_output}
 **Issues found:**
 {issues_text}
-Fix ONLY the specific issues listed above. Keep everything else the same. 
-Return the complete corrected JSON object. No markdown fencing, no explanation."""
+
+CRITICAL REPAIR INSTRUCTIONS:
+1. If strategy chips or philosophies are too similar, you must rewrite them completely using different vocabulary, sentence structures, and strategic/psychological principles. Do NOT simply change a few words or reuse a repetitive sentence template.
+2. Fix ONLY the specific issues listed above. Keep everything else high quality.
+3. Return the complete corrected JSON object. No markdown fencing, no explanation."""
