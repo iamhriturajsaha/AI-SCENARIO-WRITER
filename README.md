@@ -105,8 +105,8 @@ Input JSON → Prompt Chain → Validated JSON Output
 
 ## Challenges & Key Solutions
 ### 1. Strategy & Philosophy Diversity
-* **Challenge - ** LLMs generate repetitive options (e.g., three ways to apologize) or copy-paste phrasing templates.
-* **Solution - ** Custom token overlap validator using Jaccard similarity (excluding stop words) to reject overlaps >60% and enforce distinct strategic/psychological philosophies.
+* **Challenge -** LLMs generate repetitive options (e.g., three ways to apologize) or copy-paste phrasing templates.
+* **Solution -** Custom token overlap validator using Jaccard similarity (excluding stop words) to reject overlaps >60% and enforce distinct strategic/psychological philosophies.
 
 ### 2. Lazy Flat Rubric Traps
 * **Challenge -** Models default to identical scores (e.g., all 50s) across all rubric dimensions.
